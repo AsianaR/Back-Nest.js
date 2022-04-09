@@ -10,7 +10,7 @@ export class UserEntity{
     username: string;
     @Column()
     email: string;
-    @Column()
+    @Column({select: false})
     password: string;
     @Column({default: ''})
     image: string;
